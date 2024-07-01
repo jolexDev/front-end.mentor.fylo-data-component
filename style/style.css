@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
+  background: url(../images/bg-mobile.png);
 }
 
 /* Colors
@@ -27,3 +28,60 @@ body {
 - Very Dark Blue: hsl(229, 57%, 11%)
 
 */
+
+.container {
+  height: 97vh;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fylo-box {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+}
+
+.fylo-logo {
+  max-width: 65%;
+}
+
+.fylo-option-flex {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.fylo-option {
+  min-width: 1.6em;
+}
+
+.bg-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 0.9em;
+}
+
+.fylo-option-box {
+  display: flex;
+  flex-flow: column;
+  gap: 3em;
+  min-width: 20rem;
+  background: hsl(228, 56%, 26%);
+  border-radius: 0.6em;
+  border-top-right-radius: 6em;
+  padding: 3em;
+}
+
+.fylo-feedback-box {
+  background: hsl(228, 56%, 26%);
+  border-radius: 0.6em;
+  padding: 3em;
+  color: white;
+}
