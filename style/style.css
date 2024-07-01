@@ -63,6 +63,7 @@ span {
 .fylo-option-flex {
   display: flex;
   align-items: center;
+  min-width: 15em;
   gap: 1em;
 }
 
@@ -144,7 +145,7 @@ span {
   border-color: transparent;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   flex-basis: 12em;
-  padding: 0.1em;
+  padding: 0.2em;
 }
 
 .circle-thumb {
@@ -179,7 +180,16 @@ span {
 
 @media (min-width: 700px) {
   body {
+    background: hsl(229, 57%, 11%);
     background-image: url(../images/bg-desktop.png);
-    background-position: center;
+    background-position-y: 450px;
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+  }
+
+  .fylo-box {
+    display: flex;
+    flex-flow: row;
+    gap: 5em;
   }
 }
