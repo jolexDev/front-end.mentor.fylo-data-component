@@ -33,11 +33,10 @@ body {
 
 .container {
   height: 100vh;
-  max-width: 90%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -88,8 +87,9 @@ span {
   min-width: 20rem;
   background: hsl(228, 56%, 26%);
   border-radius: 0.6em;
-  border-top-right-radius: 6em;
+  border-top-right-radius: 7em;
   padding: 3em;
+  flex: 1;
 }
 
 .fylo-feedback-box {
@@ -178,7 +178,7 @@ span {
   font-size: 0.85em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   body {
     background: hsl(229, 57%, 11%);
     background-image: url(../images/bg-desktop.png);
@@ -188,8 +188,33 @@ span {
   }
 
   .fylo-box {
-    display: flex;
-    flex-flow: row;
-    gap: 5em;
+    display: grid;
+    grid-template-columns: 25rem 45rem;
+    gap: 4rem;
+  }
+
+  .fylo-logo {
+    max-width: 12rem;
+  }
+
+  .fylo-feedback-box {
+    align-self: flex-end;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 801px) {
+  .fylo-box {
+    display: grid;
+    grid-template-columns: 20rem 35rem;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 800px) {
+  .fylo-box {
+    display: grid;
+    grid-template-columns: 20rem 27rem;
+    gap: 4rem;
   }
 }
