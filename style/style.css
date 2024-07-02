@@ -106,8 +106,9 @@ span {
 }
 
 .fylo-text {
-  font-size: 1em;
+  font-size: 1.05em;
   text-align: center;
+  color: hsl(243, 100%, 93%);
 }
 
 .empty-bar {
@@ -180,11 +181,15 @@ span {
   .fylo-box {
     display: grid;
     grid-template-columns: 25rem 45rem;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .fylo-logo {
     max-width: 12rem;
+  }
+
+  .fylo-text {
+    font-size: 1.1em;
   }
 
   .fylo-feedback-box {
@@ -230,7 +235,6 @@ span {
   .fylo-box {
     display: grid;
     grid-template-columns: 20rem 35rem;
-    gap: 4rem;
   }
 }
 
@@ -238,7 +242,6 @@ span {
   .fylo-box {
     display: grid;
     grid-template-columns: 20rem 27rem;
-    gap: 4rem;
   }
 
   .gb-lg {
